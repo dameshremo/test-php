@@ -8,4 +8,4 @@ WORKDIR /app
 COPY . /app
 
 # Set the default command to run
-CMD ["sh"]
+CMD ["sh", "-c", "php-fpm81 -D && nginx -g 'daemon off;' && php81 vendor/bin/phinx migrate -vvv"]
