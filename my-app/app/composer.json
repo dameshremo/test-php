@@ -1,4 +1,3 @@
-json
 {
     "require": {
         "php": "^7.4"
