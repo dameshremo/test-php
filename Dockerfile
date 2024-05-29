@@ -11,5 +11,5 @@ COPY . /app
 RUN composer install
 
 # Set the default command to run
-CMD ["sh", "-c", "php-fpm81 -D && nginx -g 'daemon off;' && php81 vendor/bin/phinx migrate -vvv"]
+CMD ["sh"]
 
